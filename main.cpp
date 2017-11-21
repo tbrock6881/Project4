@@ -60,3 +60,19 @@ int main(int argc, char* argv[]) {
 return 0;
 }
 
+// this method parses strings
+void parseString( string& input, queue<string>& parsedCommands) {
+
+  char * holder;
+  char *rawInput = new char[input.size() + 1] (); 
+  strncpy( rawInput, input.c_str(), input.size() );
+
+  holder = strtok(rawInput, " ");
+  while (holder != NULL) {
+	cout<<*holder<<endl;
+  	parsedCommands.push( *holder );
+	holder = strtok( NULL, " " );
+  }
+  
+}
+
