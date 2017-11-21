@@ -75,4 +75,33 @@ void parseString( string& input, queue<string>& parsedCommands) {
   }
   
 }
+void forkThat(queue<string>& parsedCommands) {
+
+    /*collect command with flags
+     *
+     *
+     */
+
+
+
+/*  
+    char *firstCommand, *secondCommand, *holder;
+
+     
+     firstCommand = parsedCommands.pop();
+     holder = parsedCommands.front();
+     
+     if (holder[0] == '-') {
+	     holder = parsedCommands.pop();
+	     firstCommand = firstCommand + " " + holder;
+     }
+  secondCommand = parsedCommands.pop();
+     holder = parsedCommands.front();
+     
+     if (holder[0] == '-') {
+	     secondCommand = secondCommand + " " + parsedCommands.pop(); 
+     }
+	
+     cout<< "1) " << firstCommand << "2) " << secondCommand << endl;
+*/
 
